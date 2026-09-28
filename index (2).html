@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>S. Sorna Lakshmi | BCA Student &amp; Aspiring Software Developer</title>
+<meta name="description" content="Portfolio of S. Sorna Lakshmi, a 2nd-year BCA student exploring programming, web development, databases, and emerging technologies.">
+<meta property="og:title" content="S. Sorna Lakshmi | BCA Student &amp; Aspiring Software Developer">
+<meta property="og:description" content="Portfolio of S. Sorna Lakshmi, a 2nd-year BCA student exploring programming, web development, databases, and emerging technologies.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f6fb;--bg2:#fff;--tx:#161a2e;--mut:#5a6078;--line:#dfe2ef;--a1:#6b4bff;--a2:#1f8fe0;--g:linear-gradient(120deg,#6b4bff,#1f8fe0);--card:rgba(255,255,255,.75);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0d1c;--bg2:#10142a;--tx:#eef0fb;--mut:#a3a9c6;--line:#252b4a;--a1:#9c85ff;--a2:#5cb8ff;--g:linear-gradient(120deg,#8a6bff,#3ea6ff);--card:rgba(24,30,58,.6)}}
+:root[data-theme="dark"]{--bg:#0a0d1c;--bg2:#10142a;--tx:#eef0fb;--mut:#a3a9c6;--line:#252b4a;--a1:#9c85ff;--a2:#5cb8ff;--g:linear-gradient(120deg,#8a6bff,#3ea6ff);--card:rgba(24,30,58,.6)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 1.05rem/1.65 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Sora,"DM Sans",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--a2);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:88px 0}
+section.alt{background:var(--bg2)}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:12px}
+h2 span{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mut);max-width:60ch;margin:0 0 40px}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;backdrop-filter:blur(10px);transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);border-color:var(--a1)}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 24px;border-radius:99px;font-weight:700;text-decoration:none;border:1.5px solid var(--line);background:transparent;color:var(--tx);cursor:pointer;font-size:1rem;font-family:inherit;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--g);color:#fff;border:0;box-shadow:0 8px 24px -8px var(--a1)}
+.btn.s{min-height:38px;padding:0 16px;font-size:.9rem}
+.btn[aria-disabled=true]{opacity:.65;cursor:default;pointer-events:none}
+.badge{display:inline-block;padding:3px 12px;border-radius:99px;font-size:.78rem;font-weight:700;border:1px solid var(--a1);color:var(--a1)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tags span{font-size:.82rem;padding:3px 11px;border-radius:99px;background:var(--bg);border:1px solid var(--line)}
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s,box-shadow .3s}
+header.sc{background:var(--card);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+nav{display:flex;align-items:center;gap:14px;height:76px;transition:height .3s}
+header.sc nav{height:60px}
+.brand{font:700 1.1rem Sora,sans-serif;text-decoration:none;margin-right:auto}
+.links{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+.links a{display:block;padding:8px 10px;border-radius:99px;text-decoration:none;font-size:.9rem;color:var(--mut)}
+.links a:hover{color:var(--tx);background:var(--card)}
+.ic{width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--tx);cursor:pointer;font-size:1.1rem}
+#burger{display:none}
+@media(max-width:980px){#burger{display:block}.links{display:none;position:absolute;top:100%;left:12px;right:12px;flex-direction:column;background:var(--bg2);border:1px solid var(--line);border-radius:20px;padding:10px}.links.open{display:flex}.links a{padding:13px 16px;font-size:1rem}.dl{display:none}}
+/* hero */
+#home{min-height:100svh;display:flex;align-items:center;padding:120px 0 70px;position:relative;overflow:hidden}
+#home:before{content:"";position:absolute;width:640px;height:640px;right:-160px;top:-120px;border-radius:50%;background:var(--g);opacity:.2;filter:blur(90px);animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(-70px,80px)}}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;position:relative}
+h1{font-size:clamp(2.5rem,6.4vw,4.6rem)}
+h1 span{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font:500 1.2rem/1.4 Sora,sans-serif;margin:20px 0 14px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.term{background:#0d1122;color:#d6dcff;border-radius:20px;border:1px solid #2a3158;box-shadow:0 30px 60px -25px var(--a1);font:.9rem/1.7 ui-monospace,Menlo,Consolas,monospace;padding:0 0 16px;position:relative;animation:fl 6s ease-in-out infinite alternate}
+@keyframes fl{to{transform:translateY(-12px)}}
+.dots{display:flex;gap:7px;padding:14px 16px}.dots i{width:11px;height:11px;border-radius:50%;background:#3a4270}
+.term pre{margin:0;padding:0 20px;white-space:pre-wrap}
+.k{color:#b7a5ff}.f{color:#6cc4ff}.s{color:#8fe3b0}.c{color:#7c84ad}
+.cur{display:inline-block;width:8px;height:1em;background:#6cc4ff;vertical-align:-2px;animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}
+.float{position:absolute;font:700 1.3rem ui-monospace,monospace;color:var(--a1);opacity:.55;animation:fl 5s ease-in-out infinite alternate}
+@media(max-width:820px){.hero{grid-template-columns:1fr}.float{display:none}}
+/* about / stats */
+.two{display:grid;grid-template-columns:1.2fr .8fr;gap:32px}
+@media(max-width:820px){.two{grid-template-columns:1fr}}
+blockquote{margin:22px 0 0;padding-left:18px;border-left:4px solid var(--a1);font:500 1.2rem/1.4 Sora,sans-serif}
+.card ul{margin:10px 0 0;padding-left:20px;color:var(--mut)}.card li{margin:5px 0}
+.stat b{display:block;font:700 2.4rem Sora,sans-serif;background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--mut)}
+/* skills */
+.sk h3{font-size:1.05rem}.sk p{margin:6px 0 10px;color:var(--mut);font-size:.93rem}
+.ico{font-size:1.6rem}
+.lv-Comfortable{color:#12946a;border-color:#12946a}.lv-Learning{color:#c47a00;border-color:#c47a00}.lv-Practicing{color:var(--a2);border-color:var(--a2)}
+h3.cat{font-size:1.2rem;margin:34px 0 14px}
+/* projects */
+.pj{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.shot{height:150px;background:var(--g);display:flex;align-items:center;justify-content:center;font-size:3.2rem}
+.pj .bd{padding:22px;display:flex;flex-direction:column;flex:1}.pj ul{padding-left:18px;margin:6px 0 16px;color:var(--mut);font-size:.93rem}
+.pj .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+/* timeline */
+.tl{border-left:3px solid var(--a1);padding-left:26px;max-width:640px;position:relative}
+.tl:before{content:"";position:absolute;left:-10px;top:6px;width:17px;height:17px;border-radius:50%;background:var(--g)}
+.jr{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));counter-reset:j}
+.jr .card{position:relative}.jr .card:not(:last-child):after{content:"\2192";position:absolute;right:-16px;top:50%;color:var(--a1);font-size:1.3rem;z-index:1}
+@media(max-width:900px){.jr .card:not(:last-child):after{content:"\2193";right:auto;left:50%;top:auto;bottom:-22px}}
+.ex{border-style:dashed}
+.ph{border-style:dashed;text-align:center;color:var(--mut)}
+/* form */
+form{display:grid;gap:14px}label{font-weight:700;font-size:.92rem}
+input,textarea{width:100%;margin-top:6px;padding:13px 15px;border-radius:14px;border:1.5px solid var(--line);background:var(--bg);color:var(--tx);font:inherit}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:#e5484d}
+.err{color:#e5484d;font-size:.85rem;min-height:1.1em;display:block}
+#ok{color:#12946a;font-weight:700}
+footer{padding:44px 0 60px;border-top:1px solid var(--line);text-align:center;color:var(--mut)}
+footer nav{height:auto;justify-content:center;flex-wrap:wrap;margin:14px 0}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap"><nav aria-label="Main">
+<a class="brand" href="#home">S. Sorna Lakshmi</a>
+<ul class="links" id="links"></ul>
+<button class="ic" id="theme" aria-label="Toggle dark or light mode">&#9789;</button>
+<a class="btn p s dl" data-resume href="#">Download Resume</a>
+<button class="ic" id="burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+</nav></div></header>
+
+<main>
+<section id="home"><div class="wrap hero">
+<div>
+<p class="badge">BCA Student | Aspiring Software Developer | Tech Enthusiast</p>
+<h1 style="margin-top:18px">Hi, I'm <span>Sorna Lakshmi.</span></h1>
+<p class="lead">A 2nd-Year BCA Student Exploring Technology, Programming &amp; Web Development.</p>
+<p style="color:var(--mut);max-width:52ch">I’m a BCA student building my foundation in programming, web development, databases, and emerging technologies. I enjoy learning how technology works, creating practical projects, and continuously improving my technical skills.</p>
+<div class="cta"><a class="btn p" href="#projects">View My Projects</a><a class="btn" href="#contact">Let's Connect</a></div>
+</div>
+<div style="position:relative">
+<span class="float" style="top:-26px;right:8px" aria-hidden="true">{ }</span>
+<span class="float" style="bottom:-24px;left:-14px;animation-delay:-2s" aria-hidden="true">SQL</span>
+<div class="term" role="img" aria-label="Terminal showing a Python greeting">
+<div class="dots"><i></i><i></i><i></i></div>
+<pre><span class="c"># sorna.py</span>
+<span class="k">class</span> <span class="f">Learner</span>:
+    name = <span class="s">"Sorna Lakshmi"</span>
+    year = <span class="s">"BCA, 2nd year"</span>
+    exploring = [<span class="s">"Python"</span>, <span class="s">"Web"</span>,
+                 <span class="s">"SQL"</span>, <span class="s">"ML"</span>]
+
+<span class="f">print</span>(<span class="s">"Still learning. Always building."</span>)<span class="cur"></span></pre>
+</div></div>
+</div></section>
+
+<section id="about" class="alt"><div class="wrap">
+<h2 class="rv"><span>About Me</span></h2>
+<div class="two rv">
+<div>
+<p>I’m currently pursuing my Bachelor of Computer Applications and have built a foundation in programming and computer science through both academics and personal learning. So far I’ve worked with C, Python, web designing, DBMS and SQL, and I’m learning something new with each assignment.</p>
+<p>I’m interested in software development, in picking up new technologies, and in building practical projects that solve real problems, even small ones.</p>
+<blockquote>“I believe that every project is an opportunity to learn something new.”</blockquote>
+</div>
+<div class="card"><h3>Current Focus</h3><ul>
+<li>Strengthening programming fundamentals</li><li>Building web projects</li><li>Improving database knowledge</li><li>Exploring software development</li><li>Participating in technical events and hackathons</li></ul></div>
+</div>
+<div class="grid rv" id="stats" style="margin-top:34px"></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2 class="rv"><span>Skills</span></h2>
+<p class="sub rv">What I’m working with right now, labelled honestly.</p>
+<div id="skillbox"></div>
+</div></section>
+
+<section id="projects" class="alt"><div class="wrap">
+<h2 class="rv"><span>Projects &amp; Practical Work</span></h2>
+<p class="sub rv">Academic and personal builds. Links appear here as soon as each project is published.</p>
+<div class="grid" id="pj" style="grid-template-columns:repeat(auto-fit,minmax(290px,1fr))"></div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<h2 class="rv"><span>Education</span></h2>
+<div class="tl rv" style="margin-top:30px">
+<span class="badge">2025 – Present</span>
+<h3 style="margin:10px 0 4px">Bachelor of Computer Applications (BCA)</h3>
+<p style="margin:0;color:var(--mut)">2nd Year<br>PSGR Krishnammal College for Women<br>Coimbatore, Tamil Nadu</p>
+</div>
+<h3 class="cat rv" style="margin-top:70px">My Learning Journey</h3>
+<div class="jr rv" id="jr"></div>
+</div></section>
+
+<section id="achievements" class="alt"><div class="wrap">
+<h2 class="rv"><span>Achievements &amp; Activities</span></h2>
+<p class="sub rv">Hackathons, workshops, certifications and events will be added here as they happen.</p>
+<div class="grid" id="ach"></div>
+</div></section>
+
+<section id="interests"><div class="wrap">
+<h2 class="rv"><span>Interests</span></h2>
+<p class="sub rv">Code is only part of it. I also enjoy the creative and people side of technology.</p>
+<div class="grid" id="int" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))"></div>
+<h2 class="rv" style="margin-top:80px"><span>Currently Learning</span></h2>
+<div class="grid" id="learn" style="margin-top:26px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))"></div>
+</div></section>
+
+<section id="goals" class="alt"><div class="wrap">
+<h2 class="rv"><span>Where I'm Heading</span></h2>
+<p class="sub rv">I’m currently focused on strengthening my fundamentals, building meaningful projects, and gaining practical experience. My long-term goal is to grow into a strong technology professional who can combine technical knowledge, creativity, leadership, and problem-solving.</p>
+<div class="grid" id="goalbox"></div>
+</div></section>
+
+<section><div class="wrap"><div class="card rv" style="text-align:center;padding:48px 22px;background:var(--g);color:#fff;border:0">
+<h2 style="font-size:clamp(1.6rem,3.5vw,2.2rem)">Want to know more about me?</h2>
+<p style="max-width:52ch;margin:0 auto 22px">Download my resume to explore my education, technical skills, projects, and experience.</p>
+<a class="btn" data-resume href="#" style="background:#fff;color:#161a2e;border:0">Download Resume</a></div></div></section>
+
+<section id="contact" class="alt"><div class="wrap two">
+<div class="rv">
+<h2><span>Let's Connect</span></h2>
+<p class="sub">Have a project idea, collaboration opportunity, internship opportunity, or just want to connect? Feel free to reach out.</p>
+<p><b>Email</b><br><a id="em" href="#"></a></p>
+<p><b>LinkedIn</b><br><a id="li" href="#"></a></p>
+<p><b>GitHub</b><br><a id="gh" href="#"></a></p>
+</div>
+<form class="card rv" id="f" novalidate>
+<div><label for="n">Name</label><input id="n" autocomplete="name" required><span class="err" id="e-n"></span></div>
+<div><label for="e">Email</label><input id="e" type="email" autocomplete="email" required><span class="err" id="e-e"></span></div>
+<div><label for="s">Subject</label><input id="s" required><span class="err" id="e-s"></span></div>
+<div><label for="m">Message</label><textarea id="m" rows="5" required></textarea><span class="err" id="e-m"></span></div>
+<button class="btn p" type="submit">Send Message</button>
+<p id="ok" role="status"></p>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<b style="font-family:Sora,sans-serif;color:var(--tx)">S. Sorna Lakshmi</b><br>2nd-Year BCA Student | Aspiring Software Developer
+<nav aria-label="Footer"><a href="#" data-l="gh">GitHub</a><a href="#" data-l="li">LinkedIn</a><a href="#" data-l="em">Email</a></nav>
+<small>© 2026 S. Sorna Lakshmi. All rights reserved.<br>Built with curiosity, code &amp; creativity.</small>
+</div></footer>
+
+<script>
+/* ===== EDIT ME: everything on the page comes from this block ===== */
+const D={
+ resume:"/resume/Sorna-Lakshmi-Resume.pdf",
+ email:"your-email@example.com",
+ github:"https://github.com/yourusername",
+ linkedin:"https://linkedin.com/in/yourusername",
+ stats:[["2nd Year","BCA Student"],["5+","Technical Foundations"],["3","Projects Listed"],["∞","Things to Learn"]],
+ skills:{ // [icon, name, description, status]
+  "Programming":[["🔧","C","Programming fundamentals and logic","Comfortable"],["🐍","Python","Scripts, small apps and GUI basics","Comfortable"]],
+  "Web Development":[["🌐","HTML","Page structure and semantics","Comfortable"],["🎨","CSS","Layouts and styling","Comfortable"],["⚡","JavaScript","Interactivity basics","Learning"]],
+  "Database":[["🗄️","DBMS","Concepts, keys and normalization","Comfortable"],["🔍","SQL","Queries and table design","Comfortable"],["🐬","MySQL","Working with relational data","Practicing"],["🏛️","Oracle SQL","Used in the hostel project","Practicing"]],
+  "Tools & Technologies":[["🐙","Git & GitHub","Version control basics","Learning"]]},
+ projects:[
+  {t:"Hostel Management System",i:"🏠",d:"A database-oriented system to manage students, hostels, rooms, fees, payments and staff information.",tech:["Python","Oracle SQL","DBMS","Tkinter"],f:["Student registration/login","Hostel and room management","Fee management","Payment records","Database connectivity"],gh:"",demo:""},
+  {t:"Student Course Management System",i:"📚",d:"A beginner-friendly Python application for managing student and course information.",tech:["Python"],f:[],gh:"",demo:""},
+  {t:"Personal Portfolio Website",i:"💻",d:"A responsive portfolio showcasing my education, skills, projects and interests.",tech:["HTML","CSS","JavaScript"],f:[],gh:"",demo:""}],
+ journey:[["Foundations",["C Programming","Python","Programming Fundamentals"]],["Web Development",["HTML","CSS","JavaScript","Web Designing"]],["Databases",["DBMS","SQL","MySQL","Oracle"]],["Currently Exploring",["Machine Learning","Cloud Computing","IoT","Cybersecurity","Software Development"]]],
+ achievements:[["Hackathons","Add your hackathon here","Date"],["Workshops & Webinars","Add a workshop or webinar here","Date"],["Certifications","Add a certification here","Date"]], // leave empty [] to hide
+ interests:[["💡","Technology"],["🕸️","Web Development"],["⌨️","Programming"],["🧩","UI/UX"],["✨","Animation"],["🎬","Video Editing"],["🖌️","Creative Design"],["🏁","Hackathons"],["🎤","Public Speaking"],["🗣️","Learning Languages"]],
+ learning:["JavaScript","Advanced Python","Machine Learning","Cloud Computing","IoT","Cybersecurity","Git & GitHub","Advanced SQL"],
+ goals:[["01","Learn","Continuously strengthen technical and problem-solving skills."],["02","Build","Turn ideas into practical applications and projects."],["03","Grow","Gain real-world experience through internships, hackathons, collaborations, and continuous learning."]]
+};
+/* ================================================================ */
+const $=s=>document.querySelector(s),h=(id,html)=>$(id).innerHTML=html;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const nav=["Home","About","Skills","Projects","Education","Achievements","Interests","Contact"];
+h("#links",nav.map(n=>`<li><a href="#${n.toLowerCase()}">${n}</a></li>`).join(""));
+h("#stats",D.stats.map(s=>`<div class="card stat"><b>${esc(s[0])}</b><span>${esc(s[1])}</span></div>`).join(""));
+h("#skillbox",Object.entries(D.skills).map(([c,a])=>`<h3 class="cat rv">${esc(c)}</h3><div class="grid rv">${a.map(s=>`<div class="card sk"><span class="ico" aria-hidden="true">${s[0]}</span><h3>${esc(s[1])}</h3><p>${esc(s[2])}</p><span class="badge lv-${s[3]}">${s[3]}</span></div>`).join("")}</div>`).join(""));
+const lk=(u,l)=>u?`<a class="btn s" href="${esc(u)}" target="_blank" rel="noopener">${l}</a>`:`<span class="btn s" aria-disabled="true">${l}: Coming Soon</span>`;
+h("#pj",D.projects.map(p=>`<article class="card pj rv"><div class="shot" role="img" aria-label="${esc(p.t)} preview placeholder">${p.i}</div><div class="bd"><h3>${esc(p.t)}</h3><p style="color:var(--mut);margin:8px 0 0">${esc(p.d)}</p><div class="tags">${p.tech.map(t=>`<span>${esc(t)}</span>`).join("")}</div>${p.f.length?`<ul>${p.f.map(f=>`<li>${esc(f)}</li>`).join("")}</ul>`:""}<div class="row">${lk(p.gh,"GitHub")}${lk(p.demo,"Live Demo")}</div></div></article>`).join(""));
+h("#jr",D.journey.map((j,i)=>`<div class="card ${i==3?"ex":""}"><h3>${esc(j[0])}</h3>${i==3?'<span class="badge">Currently Exploring</span>':""}<ul>${j[1].map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`).join(""));
+h("#ach",D.achievements.length?D.achievements.map(a=>`<div class="card ph rv"><span class="badge">${esc(a[0])}</span><p style="margin:12px 0 4px">${esc(a[1])}</p><small>${esc(a[2])}</small></div>`).join(""):"");
+h("#int",D.interests.map(i=>`<div class="card" style="text-align:center;padding:18px 10px"><div class="ico" aria-hidden="true">${i[0]}</div>${esc(i[1])}</div>`).join(""));
+h("#learn",D.learning.map(l=>`<div class="card"><b>${esc(l)}</b><br><span class="badge" style="margin-top:8px">Learning</span></div>`).join(""));
+h("#goalbox",D.goals.map(g=>`<div class="card rv"><span class="badge">${g[0]}</span><h3 style="margin:12px 0 6px">${g[1]}</h3><p style="margin:0;color:var(--mut)">${g[2]}</p></div>`).join(""));
+document.querySelectorAll("[data-resume]").forEach(a=>{a.href=D.resume;a.setAttribute("download","")});
+const set=(id,u,t)=>{$(id).href=u;$(id).textContent=t};
+set("#em","mailto:"+D.email,D.email);set("#li",D.linkedin,D.linkedin.replace("https://",""));set("#gh",D.github,D.github.replace("https://",""));
+document.querySelectorAll("[data-l]").forEach(a=>{const k=a.dataset.l;a.href=k=="em"?"mailto:"+D.email:D[k=="gh"?"github":"linkedin"]});
+/* behaviour */
+const hd=$("#hd"),bg=$("#burger"),ls=$("#links");
+addEventListener("scroll",()=>hd.classList.toggle("sc",scrollY>30),{passive:true});
+bg.onclick=()=>{const o=ls.classList.toggle("open");bg.setAttribute("aria-expanded",o)};
+ls.onclick=e=>{if(e.target.tagName=="A"){ls.classList.remove("open");bg.setAttribute("aria-expanded",false)}};
+$("#theme").onclick=()=>{const r=document.documentElement,d=getComputedStyle(r).getPropertyValue("--bg").trim()=="#0a0d1c";r.dataset.theme=d?"light":"dark"};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
+/* form */
+$("#f").onsubmit=ev=>{ev.preventDefault();let ok=true;const v={};
+ [["n","Enter your name."],["e","Enter a valid email address."],["s","Enter a subject."],["m","Write a message of at least 10 characters."]].forEach(([id,msg])=>{
+  const el=$("#"+id),val=el.value.trim();v[id]=val;
+  const bad=!val||(id=="e"&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(val))||(id=="m"&&val.length<10);
+  el.setAttribute("aria-invalid",bad);$("#e-"+id).textContent=bad?msg:"";if(bad)ok=false});
+ if(!ok)return;
+ location.href=`mailto:${D.email}?subject=${encodeURIComponent(v.s)}&body=${encodeURIComponent(v.m+"\n\n"+v.n+" ("+v.e+")")}`;
+ $("#ok").textContent="Opening your email app to send the message."};
+</script>
+</body>
+</html>
